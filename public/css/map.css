@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+.nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-item {
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-item.active {
+    background-color: #f5e9d9;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* bikin gif */
+
+.map {
+    align-items: center;
+    display: flex;
+}
+
+.image-slideshow {
+    position: relative;
+    min-height: 200px;
+    width: 100%; /* Lebar gambar slideshow */
+    height: 58.2vh; /* Tinggi gambar slideshow */
+    overflow: hidden; /* Menyembunyikan gambar yang tidak ditampilkan */
+}
+
+.image-slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Mulai dengan gambar tersembunyi */
+    animation: slideShow 9s infinite; /* Animasi untuk gambar slideshow */
+    transition: opacity 1s ease-in-out; /* Smooth transition ketika opacity berubah */
+}
+
+/* Mengatur urutan gambar */
+.image-slideshow .slide:nth-child(1) {
+    animation-delay: 0s; /* Gambar pertama muncul pertama kali */
+}
+
+.image-slideshow .slide:nth-child(2) {
+    animation-delay: 3s; /* Gambar kedua muncul setelah 3 detik */
+}
+
+.image-slideshow .slide:nth-child(3) {
+    animation-delay: 3s; /* Gambar ketiga muncul setelah 6 detik */
+}
+.image-slideshow .slide:nth-child(4) {
+    animation-delay: 3s; /* Gambar ketiga muncul setelah 6 detik */
+}
+.image-slideshow .slide:nth-child(5) {
+    animation-delay: 6s; /* Gambar ketiga muncul setelah 6 detik */
+}
+/* Animasi bergantinya gambar */
+@keyframes slideShow {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,109 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+}
+
+/* navbar 1 */
+.nav1 {
+    background: rgba(251, 234, 207, 1);
+}
+
+.account {
+    color: black;
+    text-decoration: none;
+}
+
+.account:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box i {
+    font-size: 24px;
+    color: #000;
+}
+
+.box a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: #000;
+}
+
+.box i:hover {
+    color: #000;
+}
+
+/* navbar 2 */
+.nav2 i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav2 .navbar-nav {
+    text-align: center;
+}
+
+.nav2 .form-control {
+    width: 100%;
+}
+
+.nav2 .collapse .d-flex {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+/* content */
+.wrap {
+    flex: 1;
+}
+
+/* footer */
+footer {
+    background: rgba(251, 234, 207, 1);
+    padding: 1rem 0;
+}
+
+.app-download-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.qr-code {
+    width: 100px;
+    height: auto;
+}
+
+.store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.google-play,
+.app-store {
+    width: 150px;
+    height: auto;
+}

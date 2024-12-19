@@ -1,0 +1,60 @@
+.title {
+    border-radius: 12px;
+}
+
+.heart-button i {
+    color: red;
+}
+
+.custom-style {
+    font-size: 20px; /* Ukuran teks */
+}
+
+.custom-style i {
+    font-size: 20px; /* Ukuran icon */
+}
+
+/* Chat Bubble */
+.chat-bubble {
+    background-color: #eaeaea;
+    color: #000;
+    min-width: 75%;
+}
+
+/* User Chat Bubble */
+.user-chat {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Input Area */
+.input-area {
+    background-color: rgba(251, 234, 207, 1);
+}
+
+/* Button Styling */
+.btn-outline-dark {
+    border: 2px solid #333;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-dark {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-box {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    height: 70vh;
+    overflow-y: auto;
+}

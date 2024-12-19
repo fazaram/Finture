@@ -1,0 +1,480 @@
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    accent-color: green;
+    cursor: pointer;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.cart-container > .shopping-cart {
+    max-height: 450px; /* Menentukan tinggi maksimum untuk area yang scrollable */
+    overflow-y: auto; /* Membuat scrollbar vertikal */
+}
+
+.shopping-cart::-webkit-scrollbar {
+    width: 10px; /* Lebar scrollbar */
+}
+
+.shopping-cart::-webkit-scrollbar-thumb {
+    background-color: #888; /* Warna untuk bagian yang bisa digulirkan */
+    border-radius: 10px;
+}
+
+.shopping-cart::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Warna saat hover di scrollbar */
+}
+
+.shopping-cart::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Warna latar belakang track scrollbar */
+}
+
+.price,
+.quantity {
+    text-align: center;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.total {
+    width: 344px;
+    height: 200px;
+    margin: 20px 0px;
+}
+
+.summary {
+    padding: 0px 10px;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    background-color: gray;
+}
+
+.input {
+    padding-left: 5px;
+    width: 216px;
+    height: 30px;
+    border: white;
+    border-radius: 8px;
+    background-color: rgb(233, 233, 233);
+}
+
+.apply {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 27px;
+    margin-bottom: 3px;
+}
+
+.row {
+    display: flex; /* Aktifkan Flexbox */
+    justify-content: space-between; /* Jarak otomatis antara elemen kiri dan kanan */
+    margin-bottom: 10px; /* Jarak antar baris */
+    padding: 10px 20px 10px 10px;
+}
+.row1 {
+    display: flex; /* Aktifkan Flexbox */
+    justify-content: space-between; /* Jarak otomatis antara elemen kiri dan kanan */
+    margin-bottom: 10px; /* Jarak antar baris */
+    margin-top: 30px;
+    padding: 10px 20px 10px 10px;
+}
+
+.row span {
+    font-size: 16px; /* Sesuaikan ukuran teks */
+    color: #333; /* Warna teks */
+}
+
+.payment-btn {
+    background: #000;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 167px 0px 10px 100px;
+}
+
+/* General Footer Styling */
+.footer {
+    background-color: #f5e9d9;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size: 16px;
+    color: #333;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.footer-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
+}
+
+.app-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-links img {
+    width: 150px;
+}
+
+/* QR Code and App Links */
+.qr-code {
+    justify-content: end;
+    text-align: right;
+    margin-left: 800px;
+}
+
+.qr-code img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+}
+
+.app-links img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* Footer Location */
+.footer-location {
+    text-align: left;
+    margin-top: 20px;
+    color: #555;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Styling untuk Top Bar */
+.header-1 {
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5e8d0;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.user-icon {
+    padding-bottom: 2px;
+}
+.user-options a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-item {
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-item.active {
+    background-color: #f5e9d9;
+    color: #000;
+    border-radius: 5px;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-cart input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.search-cart input::placeholder {
+    color: #aaa;
+}
+
+.icon {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart-container {
+    display: flex;
+    gap: 30px;
+}
+
+.cart-table {
+    width: 65%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.cart-item .quantity input {
+    width: 30px;
+    text-align: center;
+}
+
+.shopping-cart {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.cart-container > .shopping-cart {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.shopping-cart::-webkit-scrollbar {
+    width: 10px;
+}
+
+.shopping-cart::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.shopping-cart::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.shopping-cart::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.product-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 30px;
+}
+
+.product img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.price,
+.quantity {
+    text-align: center;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.tracking-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.tracking-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 6px;
+    display: inline-block;
+}
+
+.tracking-link:hover,
+.tracking-link:focus,
+.tracking-link:active {
+    text-decoration: none;
+    color: black;
+}
+
+.status .deliver {
+    color: black;
+    font-weight: bold;
+}

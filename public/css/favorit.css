@@ -1,0 +1,19 @@
+.heart-button i {
+    color: red;
+}
+
+.card1 {
+    text-align: left;
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.card-body1 {
+    margin-top: auto;
+}
+.card-img-top1 {
+    margin-top: auto;
+}
